@@ -1,0 +1,11 @@
+char encryptSubCipher(char x, char *cipherKey)
+{
+  if(x != 32)
+  {
+    int letter = x - 65;
+    x = cipherKey[letter];
+    return x;
+  }
+  else
+    return 32;
+}
