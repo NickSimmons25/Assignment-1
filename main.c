@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <Cipher.h>
+#include <Cipher.h> //includes the two custom header files, cipher.h (where all encryption/decryption functions are stored) and mode.h, where the decision on which encryption/decryption function to execute is made by the user.
 #include "mode.h"
 
 
 int main() 
 {
-  FILE *input;
+  FILE *input; 
   FILE *output;  
   input = fopen("Input.txt", "r"); //opens the input file under the name input. 
   output = fopen("output.txt", "w"); //opens the output file under the name output. 
